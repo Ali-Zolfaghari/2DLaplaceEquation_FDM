@@ -1,12 +1,36 @@
+%***************************************************************************************************
+%*   Solve 2D laplace equation by presented code.
+%*   I take no responsibilities for any errors in the code or damage thereby.
+%*   Please notify me at zolfaghari1992iut@gmail.com if the code is used in any type of application.
+%***************************************************************************************************
+%*   Developer   : Ali Zolfaghari Sichani (14-06-2018)
+%***************************************************************************************************
+%*   References  : 
+%*   Computational Fluid Mechanics and Heat Transfer.
+%*   by John C. Tannehill (Author), Dale Anderson (Author), Richard H. Pletcher (Author).
+%***************************************************************************************************
+%*   Laplace Equation in two-dimensional square domain. (solving by centeral difference scheme)   :   
+%*   Uxx + Uyy = 0
+%*   Inputs      :
+%*   MType = 1 : GAUSS SEIDEL
+%*   MType = 2 : SUCCESSIVE OVER RELAXATION
+%*   MType = 3 : STRONGLY IMPLICIT PROCEDURE
+%*   MType = 4 : MULTIGRID + GAUSS SEIDEL
+%*   MType = 5 : MULTIGRID + STRONGLY IMPLICIT PROCEDURE
+%*   M          (number of division of domain in x-direction   )
+%*   N          (number of division of domain in y-direction   )
+%*   Ws         (relaxation factor                             )
+%*   MGITER     (max. allowable itrerations of gauss           )
+%*   MAXERROR   (max. allowable error                          )
+%*   MAXITER    (max. allowable itrerations                    )
+%*   Outputs     :
+%*   plot numerical and exact solution
+%***************************************************************************************************
+
+
 clear,clc,close all
 format compact
 format long
-
-% MType = 1 : GAUSS SEIDEL
-% MType = 2 : SUCCESSIVE OVER RELAXATION
-% MType = 3 : STRONGLY IMPLICIT PROCEDURE
-% MType = 4 : MULTIGRID + GAUSS SEIDEL
-% MType = 5 : MULTIGRID + STRONGLY IMPLICIT PROCEDURE
 
 
 % Inputs
