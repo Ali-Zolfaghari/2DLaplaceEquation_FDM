@@ -7,3 +7,5 @@ Methods of solving : (central difference scheme)
 - 3 : STRONGLY IMPLICIT PROCEDURE
 - 4 : MULTIGRID + GAUSS SEIDEL
 - 5 : MULTIGRID + STRONGLY IMPLICIT PROCEDURE
+
+![image](https://user-images.githubusercontent.com/77577542/151662195-a45dd553-cb81-4ed6-b881-c7d1c2eb5d44.png)
